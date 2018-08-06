@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>淘宝</title>
+    <style>
+        ul li{
+            list-style: none;/*默认列表没有实心原点*/
+            background-color: orange;
+            height: 30px;width:120px;
+            border: 2px solid whitesmoke;
+            text-align: center; /*文本居中*/
+            display:inline-block;
+        }
+        ul li:hover{
+            box-shadow:10px 10px 10px grey;
+            color: greenyellow; /*把他做成点过去有阴影的样子，像app*/
+
+        }
+        /*这是一个标签选择器 */
+
+    </style>
+
+    <style>
+        .container{                      /*边界，纯灰色*/
+            height: 500px; width: 320px; border: 1px solid grey;display:inline-block;
+            /*处理行内非替换高度的高宽问题，把表单横过来*/
+        }/*这是一个类选择器*/
+        .img {
+            height: 360px;
+            background-image: url(11.jpg);
+            background-size: cover;
+            background-position: center; }
+
+        .title {
+            color: black;
+            margin: 10px;/*外边距为10像素*/
+            font-size: 20px;
+        }
+
+        .price {
+            font-size: 30px;
+            margin: 10px;
+            text-align: right;
+            color: orange;
+
+        }
+
+        .buy {
+            font-size: 40px;
+            text-align: center;
+            background-color: cadetblue;
+            background-size: cover;
+            box-shadow:10px 10px 10px grey;
+            color: greenyellow;
+
+        }
+
+        .img2{
+              height: 360px;
+              background-image:url(22.jpg) ;
+              background-size: cover;
+              background-position: center;
+
+          }
+        .img3{
+                height: 360px;
+                background-image:url(33.jpg) ;
+                background-size: cover;
+                background-position: center;
+
+            }
+        .img4{
+                  height: 360px;
+                  background-image:url(44.jpg) ;
+                  background-size: cover;
+                  background-position: center;
+
+              }
+    </style>
+</head>
+<body>
+<img src="timg.jpg" height="=200px" width="200px" >
+<font color="#ff7f50" size="20">淘宝，买买买！</font>
+<form action="https://www.taobao.com/s">
+    <input name="hw">
+    <input type="submit" value="淘一下">
+</form>
+<ul>
+    <li>小米</li>
+    <li>华为</li>
+    <li>三星</li>
+    <li>苹果</li>
+    <li>vivo</li>
+    <li>oppo</li>
+    <li>荣耀</li>
+    <li>美图</li>
+    <li>联想</li>
+    <li>索尼</li>
+</ul>
+<div class="container" >
+    <div class="img"></div>
+    <div class="title">小米mix2</div>
+    <div class="price">2000</div>
+    <div class="buy">BUY IT</div>
+</div>
+<div class="container" >
+    <div class="img2"></div>
+    <div class="title">华为</div>
+    <div class="price">3000</div>
+    <div class="buy">BUY IT</div>
+</div>
+<div class="container" >
+    <div class="img3"></div>
+    <div class="title">魅族</div>
+    <div class="price">500</div>
+    <div class="buy">BUY IT</div>
+</div>
+<div class="container" >
+    <div class="img4"></div>
+    <div class="title">苹果</div>
+    <div class="price">5000</div>
+    <div class="buy">BUY IT</div>
+</div>
+
+
+
+
+</body>
+</html>
